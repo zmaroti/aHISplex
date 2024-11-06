@@ -185,7 +185,7 @@ elif [ "$ref" = "hg38" -o "$ref" = "Hg38" ]; then
     ref="GRCh38"
 else
     echo "ERROR: The reference must be GRCh37, GRCh38, hg19 or hg38"
-    ecit 1
+    exit 1
 fi
 
 refdir="ref_$ref"
