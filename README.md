@@ -79,7 +79,7 @@ classifHISplex -short HIrisPlex-S_result.csv >classifications_short.csv
 
 or
 
-classifHISplex -short HIrisPlex-S_result.csv >classifications.csv
+classifHISplex HIrisPlex-S_result.csv >classifications.csv
 ```
 
 With the '-short' option, only the sample ID, the eye, hair, and skin phenotypes are saved in the '.csv' file. Without this option, all of the genotype and phenotype probability data is saved, and the last 3 columns will contain the phenotype classifications, according to the classification schema described in detail in the HirisPlex-S user manual.
@@ -100,7 +100,7 @@ classifHISplex -short HIrisPlex-S_result.csv >classifications_short.csv
 
 or
 
-classifHISplex -short HIrisPlex-S_result.csv >classifications.csv
+classifHISplex HIrisPlex-S_result.csv >classifications.csv
 ```
 
 **NOTE** the BAMLIST.txt is a standard GLIMPSE2 BAMLIST.txt file. One BAM file per line. Optionally, a second column (space separated) can be used to specify the sample name; otherwise the name of the file is used.
