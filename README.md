@@ -54,12 +54,12 @@ transToHISplex -help
 ```
 
 ### Quickstart with practical examples
-**Before analysis, please read the manuscript and understand the limitations of the method.** Based on the genome coverage, date of sample, the rate of PMD the accuracy of imputation and the subsequent phenotype prediction may significantly different. Furthermore, please **NOTE** that imputatiomn relies on linked genomic context, hence our method can be applied to SHOTGUN WGS data only and was NOT tested on 1240K capture data which likely have limited linked marker context harbouring the HIrisPlex-S markers.
+**Before analysis, please read the manuscript and understand the limitations of the method.** Based on the genome coverage, date of sample, the rate of PMD, the imputation, and the subsequent phenotype prediction may have significantly different accuracy. Furthermore, please **NOTE** that imputation relies on linked genomic context, hence our method can be applied to SHOTGUN WGS data only and was NOT tested on 1240K capture data, which likely have limited linked marker context harbouring the HIrisPlex-S markers.
 
 The analysis consists of 3 steps.
-1. run aHISplex.sh
-2. uppload the output of step 1 (HISplex41_upload.csv) to https://hirisplex.erasmusmc.nl/ web service. Download/save the resulting phenotype probability putput file.
-3. use classifHISplex to evaluate pheontype probabilities based on the rules described in the HIrisPlex-s user manual.
+1. Run aHISplex.sh
+2. Upload the output of step 1 (HISplex41_upload.csv) to https://hirisplex.erasmusmc.nl/ web service. Download/save the resulting phenotype probability output file.
+3. Use classifHISplex to evaluate phenotype probabilities applying the rules described in the HIrisPlex-s user manual.
 
 The tool can analyse a single BAM file or a list of BAM files. During the first step, the data will be imputed and the result of the analysis is saved in the OUTPREF directory (as set by the -o option, or the "impute" directory if not provided). The directory will contain multiple files, including the log files of GLIMPSE2 imputation and ligation, the imputed genotypes of the 11 genome regions harbouring the 41 HirisPlex-S markers, the filtered genotypes of the 41 markers in bcf and also a .tsv format (from bcf query), and the upload file 'HISplex41_upload.csv' that contains the translated HIrisPlex-S allele counts to be uploaded on the HirisPlex-S system's web service (https://hirisplex.erasmusmc.nl/). This comma separated ('.csv') upload file may contain data for single sample or multiple samples (in case a BAM_LIST file is provided).
  
