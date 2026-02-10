@@ -1,7 +1,7 @@
 aHISplex : Imputation based HIrisiPlex-S phenotyping from low coverage ancient (or degraded forensic) genome data.
 ======================================================
 This is a repository containing the tools to predict the visible traits (hair, eye and skin colors) in humans from ancient/low coverage shotgun WGS DNA. The approach is described detail in our manuscript:
->Zoltán Maróti, Emil Nyerki, Endre Neparaczki, Tibor Török, Gergely István Varga, Tibor Kalmár: **aHISplex: an imputation-based method for eye, hair and skin colour prediction from low-coverage ancient DNA.**
+>Zoltán Maróti, Emil Nyerki, Tibor Török, Gergely István Varga, Tibor Kalmár: **Robust imputation-based method for eye, hair, and skin colour prediction from low-coverage ancient DNA**
 >
 >doi: [https://doi.org/10.1038/s41598-026-38372-3](https://doi.org/10.1038/s41598-026-38372-3)
 
